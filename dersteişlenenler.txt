@@ -1,0 +1,61 @@
+ 287  nano .gitconfig
+   288  ll
+     289  mkdir first-repo
+       290  cd first-repo/
+         291  git init
+	   292  ll
+	     293  nano README.md
+	       294  git add .
+	         295  git commit -m "First commit"
+		   296  git status
+		     297  git remote add origin https://github.com/marcus-clarusway/first-repo.git
+		       298  git push -u origin master
+		         299  cd ..
+			   300  mkdir second-repo
+			     301  cd second-repo/
+			       302  git init
+			         303  nano README.md
+				   304  git add .
+				     305  git commit -m "First commit"
+				       306  git config --global credential.helper store
+				         307  git branch -M master
+					   308  git remote add origin https://github.com/marcus-clarusway/second-repo.git
+					     309  git push -u origin master
+					       310  cd ..
+					         311  git clone https://github.com/marcus-clarusway/third-repo.git
+						   312  ll
+						     313  cd third-repo/
+						       314  ll
+						         315  nano index.html
+							   316  nano yusuf.py
+							     317  ll
+							       318  git add .
+							         319  git commit -m "yusuf.py and index.html files were added to repo."
+								   320  git push
+								     321  cd ..
+								       322  history
+								         323  nano .gitconfig
+									   324  history
+									     325  ll
+									       326  cd second-repo/
+									         327  ll
+										   328  git status
+										     329  ll
+										       330  git status
+										         331  git pull
+											   332  ll
+											     333  cd ..
+											       334  git clone https://github.com/marcus-clarusway/git-session-3.git
+											         335  cd git-session-3/
+												   336  ll
+												     337  nano index.js
+												       338  nano test.py
+												         339  git add .
+													   340  git commit -m "test.py and index.js added"
+													     341  git push
+													       342  nano index.html
+													         343  nano README.md
+														   344  git status
+														     345  git add .
+														       346  git commit -m "index.html was added and README.md was modified"
+														         347  git push
